@@ -27,7 +27,7 @@ alias nowai='chmod'
 
 alias hai='cd'
 alias iz='ls'
-alias tldr='ls -l'
+alias tldr='ls -l -h'
 alias plz='pwd'
 alias ihazbucket='df -h'
 
