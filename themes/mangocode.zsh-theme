@@ -1,4 +1,4 @@
-PROMPT='$fg[yellow]${USER}@%m: $fg[green]${PWD/#$HOME/~} $(git_prompt_info)$reset_color ➜  '
+PROMPT='$fg[yellow]%n@%m: $fg[green]%2~ $(git_prompt_info)$reset_color ➜  '
 
 function get_pwd() {
 	echo "${PWD/$HOME/~}"
