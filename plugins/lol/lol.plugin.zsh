@@ -6,6 +6,8 @@ alias mangocode='vi /Users/Atom/.oh-my-zsh/themes/mangocode.zsh-theme'
 alias wanip='dig +short myip.opendns.com @resolver1.opendns.com'
 alias cantconnect='wanip'
 alias bullsage='fortune | cowsay'
+alias wiseutterance='fortune | cowsay'
+alias wise-utterance='fortune | cowsay'
 
 alias wtf='dmesg'
 alias onoz='cat /var/log/errors.log'
