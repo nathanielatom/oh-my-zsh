@@ -30,7 +30,7 @@ alias nowai='chmod'
 
 alias hai='cd'
 alias iz='ls'
-alias tldr='ls -l -h'
+alias tldr='ls -lah'
 alias plz='pwd'
 alias ihazbucket='df -h'
 
