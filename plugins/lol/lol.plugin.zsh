@@ -5,6 +5,7 @@ alias mangocode='vi /Users/Atom/.oh-my-zsh/themes/mangocode.zsh-theme'
 
 alias pip='noglob pip'
 alias -g chrome='/Applications/Google\ Chrome.app'
+alias diff='git diff'
 
 alias wanip='dig +short myip.opendns.com @resolver1.opendns.com'
 alias cantconnect='wanip'
