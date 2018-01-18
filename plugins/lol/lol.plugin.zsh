@@ -4,7 +4,6 @@ alias isofunnai='vi /Users/Atom/.oh-my-zsh/plugins/lol/lol.plugin.zsh'
 alias mangocode='vi /Users/Atom/.oh-my-zsh/themes/mangocode.zsh-theme'
 
 alias pip='noglob pip'
-alias chromium="/Applications/Chromium.app/Contents/MacOS/Chromium"
 alias chrome='/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome'
 alias meld='/Applications/Meld.app/Contents/MacOS/Meld &'
 
