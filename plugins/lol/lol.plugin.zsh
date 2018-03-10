@@ -7,6 +7,7 @@ alias pip='noglob pip'
 alias chrome='/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome'
 alias meld='/Applications/Meld.app/Contents/MacOS/Meld &'
 
+alias histolist="history | awk '{CMD[\$2]++;count++;}END { for (a in CMD)print CMD[a] \" \" CMD[a]/count*100 \"% \" a;}' | grep -v \"./\" | column -c3 -s \" \" -t | sort -nr | nl | head -n25"
 alias wanip='dig +short myip.opendns.com @resolver1.opendns.com'
 alias cantconnect='wanip'
 alias bullsage='fortune | cowsay'
