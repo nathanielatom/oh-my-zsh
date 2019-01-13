@@ -3,15 +3,23 @@ alias lol='less /Users/Atom/.oh-my-zsh/plugins/lol/lol.plugin.zsh'
 alias isofunnai='vi /Users/Atom/.oh-my-zsh/plugins/lol/lol.plugin.zsh'
 alias mangocode='vi /Users/Atom/.oh-my-zsh/themes/mangocode.zsh-theme'
 
+alias weather='curl wttr.in'
 alias chrome='/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome'
 alias meld='/Applications/Meld.app/Contents/MacOS/Meld &'
 alias gimmedamusic='youtube-dl -o "%(title)s.%(ext)s" -x --audio-format mp3 --audio-quality 0 '
 alias histolist="history | awk '{CMD[\$2]++;count++;}END { for (a in CMD)print CMD[a] \" \" CMD[a]/count*100 \"% \" a;}' | grep -v \"./\" | column -c3 -s \" \" -t | sort -nr | nl | head -n25"
+alias lanip="ifconfig | grep cast | awk '{print \$2}'"
 alias wanip='dig +short myip.opendns.com @resolver1.opendns.com'
 alias cantconnect='wanip'
 alias bullsage='fortune | cowsay'
 alias wiseutterance='fortune | cowsay'
 alias wise-utterance='fortune | cowsay'
+
+function slicedamusic() {
+    url=$(gimmedamusic --get-url "${@:3}")
+    filename=$(gimmedamusic --get-filename "${@:3}")
+    ffmpeg -ss "$1" -to "$2" -i "$url" -c copy "$filename"
+}
 
 alias wtf='dmesg'
 alias onoz='cat /var/log/errors.log'
