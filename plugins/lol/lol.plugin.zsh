@@ -1,4 +1,4 @@
-# LOL!!1
+# LOL!!1!11!
 alias lol='less /Users/Atom/.oh-my-zsh/plugins/lol/lol.plugin.zsh'
 alias isofunnai='vi /Users/Atom/.oh-my-zsh/plugins/lol/lol.plugin.zsh'
 alias mangocode='vi /Users/Atom/.oh-my-zsh/themes/mangocode.zsh-theme'
@@ -10,10 +10,7 @@ alias gimmedamusic='youtube-dl -o "%(title)s.%(ext)s" -x --audio-format mp3 --au
 alias histolist="history | awk '{CMD[\$2]++;count++;}END { for (a in CMD)print CMD[a] \" \" CMD[a]/count*100 \"% \" a;}' | grep -v \"./\" | column -c3 -s \" \" -t | sort -nr | nl | head -n25"
 alias lanip="ifconfig | grep cast | awk '{print \$2}'"
 alias wanip='dig +short myip.opendns.com @resolver1.opendns.com'
-alias cantconnect='wanip'
-alias bullsage='fortune | cowsay'
-alias wiseutterance='fortune | cowsay'
-alias wise-utterance='fortune | cowsay'
+alias bullsage='fortune | cowsay | lolcat'
 
 function slicedamusic() {
     url=$(gimmedamusic --get-url "${@:3}")
@@ -21,15 +18,15 @@ function slicedamusic() {
     ffmpeg -ss "$1" -to "$2" -i "$url" -c copy "$filename"
 }
 
+# Source: https://aur.archlinux.org/packages/lolbash/lolbash/lolbash.sh
+
 alias wtf='dmesg'
 alias onoz='cat /var/log/errors.log'
 alias rtfm='man'
 alias ihazthedumb='man'
 alias derp='man'
 
-alias :3='echo'
-alias moar='more'
-alias fowawan='less'
+alias moar='less'
 alias isosmrt='vi'
 alias alwayz='tail -f'
 
@@ -60,8 +57,7 @@ alias byes='exit'
 alias cya='reboot'
 alias kthxbai='halt'
 
-
-alias pwned='ssh'
+alias pwned='ftp'
 
 alias hackzor='git init'
 alias rulz='git push'
@@ -69,7 +65,7 @@ alias bringz='git pull'
 alias chicken='git add'
 alias oanward='git commit -m'
 alias ooanward='git commit -am'
-alias yolo='git commit -m "$(curl -s whatthecommit.com/index.txt)"'
+alias yolo='git commit -m "$(curl -s https://whatthecommit.com/index.txt)"'
 alias letcat='git checkout'
 alias violenz='git rebase'
 
