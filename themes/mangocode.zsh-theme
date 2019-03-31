@@ -1,4 +1,3 @@
-source $ZSH/custom/zsh-git-prompt/zshrc.sh
 PROMPT='%{$fg[yellow]%}%n@%m: %{$fg[green]%}%3~$(git_super_status) ➜  '
 
 ZSH_THEME_GIT_PROMPT_PREFIX=" [git:"
